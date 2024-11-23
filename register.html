@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/5.3.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="config.php" method="post">
+
+    <section class="h-100 h-custom" style="background-color: #8fc4b7;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="card rounded-3">
+                        <img src="output.jpg"
+                            class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+                            alt="Sample photo">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
+
+                            <form class="px-md-2">
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="text" id="form3Example1q" name="email" class="form-control" placeholder="Enter email" required />
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div data-mdb-input-init class="form-outline datepicker">
+                                            <input type="text" class="form-control" id="exampleDatepicker1" name="username" placeholder="Enter username" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                                    <div class="col-md-6">
+                                        <div data-mdb-input-init class="form-outline">
+                                            <input type="password" id="form3Example1w" name="password" class="form-control" placeholder="Enter password" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit button and Login button in same row -->
+                                <div class="form-footer">
+                                    <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-lg mb-1">Submit</button>
+                                    
+                                    <!-- Login button with same style as Submit -->
+                                    <a href="login.html" class="btn btn-success btn-lg mb-1">Already user? Login here</a>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/5.3.0/js/mdb.min.js"></script>
+</form>
+</body>
+
+</html>
